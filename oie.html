@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Country</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #007BFF;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        #rank-widget {
+            text-align: center;
+        }
+
+        #discord-invite, #developer-info {
+            text-align: center;
+            display: none;
+        }
+
+        #discord-invite a, #developer-info p {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RPG Country</h1>
+    </header>
+
+    <nav>
+        <a href="javascript:void(0);" onclick="showRank()">Rank de Dinheiro</a>
+        <a href="javascript:void(0);" onclick="showDiscord()">Servidor do Discord</a>
+        <a href="javascript:void(0);" onclick="showDeveloper()">Desenvolvedor</a>
+    </nav>
+
+    <section id="rank-widget">
+        <h2>Rank de Dinheiro</h2>
+        <iframe src="https://unbelievaboat.com/leaderboard/1170112431574491186/widget" width="450" height="500" style="border: 0;"></iframe>
+    </section>
+
+    <section id="discord-invite">
+        <h2>Servidor do Discord</h2>
+        <p><a href="https://discord.gg/bnmqUw54NW" target="_blank">Junte-se ao nosso Discord</a></p>
+    </section>
+
+    <section id="developer-info">
+        <h2>Desenvolvedor</h2>
+        <p>Create by: futebol.fan</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 RPG Country</p>
+    </footer>
+
+    <script>
+        function showRank() {
+            document.getElementById("rank-widget").style.display = "block";
+            document.getElementById("discord-invite").style.display = "none";
+            document.getElementById("developer-info").style.display = "none";
+        }
+
+        function showDiscord() {
+            document.getElementById("rank-widget").style.display = "none";
+            document.getElementById("discord-invite").style.display = "block";
+            document.getElementById("developer-info").style.display = "none";
+        }
+
+        function showDeveloper() {
+            document.getElementById("rank-widget").style.display = "none";
+            document.getElementById("discord-invite").style.display = "none";
+            document.getElementById("developer-info").style.display = "block";
+        }
+    </script>
+</body>
+</html>
