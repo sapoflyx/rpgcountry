@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPG Country Temporada 2023</title>
+    <title>RPG Country</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -35,13 +35,13 @@
 
         section {
             margin: 20px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        #rank-widget, #discord-invite, #developer-info, #inicio, #rank-militar {
+        #rank-widget {
+            text-align: center;
+        }
+
+        #discord-invite, #developer-info {
             text-align: center;
             display: none;
         }
@@ -65,26 +65,20 @@
 </head>
 <body>
     <header>
-        <h1>RPG Country Temporada 2023</h1>
+        <h1>RPG Country</h1>
     </header>
 
     <nav>
-        <a href="javascript:void(0);" onclick="showInicio()">Início</a>
         <a href="javascript:void(0);" onclick="showRank()">Rank de Dinheiro</a>
         <a href="javascript:void(0);" onclick="showDiscord()">Servidor do Discord</a>
         <a href="javascript:void(0);" onclick="showDeveloper()">Desenvolvedor</a>
-        <a href="javascript:void(0);" onclick="showRankMilitar()">Rank Militar</a>
     </nav>
-
-    <section id="inicio">
-        <h2>Bem-vindo ao RPG Country Temporada 2023</h2>
-        <p>Descubra um mundo de aventuras e conquistas!</p>
-    </section>
 
     <section id="rank-widget">
         <h2>Rank de Dinheiro</h2>
         <iframe src="https://unbelievaboat.com/leaderboard/1170112431574491186/widget" width="450" height="500" style="border: 0;"></iframe>
     </section>
+
     <section id="discord-invite">
         <h2>Servidor do Discord</h2>
         <p><a href="https://discord.gg/bnmqUw54NW" target="_blank">Junte-se ao nosso Discord</a></p>
@@ -95,61 +89,27 @@
         <p>Create by: futebol.fan</p>
     </section>
 
-    <section id="rank-militar">
-        <h2>Rank Militar</h2>
-        <ol>
-            <li>🇷🇺 Federação Russa</li>
-            <li>🇩🇪 Alemanha</li>
-            <li>🇯🇵 Japão</li>
-            <li>🇧🇷 Brasil</li>
-            <li>🇮🇳 Índia</li>
-            <li>🇮🇱 Israel</li>
-        </ol>
-    </section>
-
     <footer>
-        <p>&copy; 2023 RPG Country</p>
+        <p>&copy;RPG Country</p>
     </footer>
 
     <script>
-        function showInicio() {
-            document.getElementById("inicio").style.display = "block";
-            document.getElementById("rank-widget").style.display = "none";
-            document.getElementById("discord-invite").style.display = "none";
-            document.getElementById("developer-info").style.display = "none";
-            document.getElementById("rank-militar").style.display = "none";
-        }
-
         function showRank() {
-            document.getElementById("inicio").style.display = "none";
             document.getElementById("rank-widget").style.display = "block";
             document.getElementById("discord-invite").style.display = "none";
             document.getElementById("developer-info").style.display = "none";
-            document.getElementById("rank-militar").style.display = "none";
         }
 
         function showDiscord() {
-            document.getElementById("inicio").style.display = "none";
             document.getElementById("rank-widget").style.display = "none";
             document.getElementById("discord-invite").style.display = "block";
             document.getElementById("developer-info").style.display = "none";
-            document.getElementById("rank-militar").style.display = "none";
         }
 
         function showDeveloper() {
-            document.getElementById("inicio").style.display = "none";
             document.getElementById("rank-widget").style.display = "none";
             document.getElementById("discord-invite").style.display = "none";
             document.getElementById("developer-info").style.display = "block";
-            document.getElementById("rank-militar").style.display = "none";
-        }
-
-        function showRankMilitar() {
-            document.getElementById("inicio").style.display = "none";
-            document.getElementById("rank-widget").style.display = "none";
-            document.getElementById("discord-invite").style.display = "none";
-            document.getElementById("developer-info").style.display = "none";
-            document.getElementById("rank-militar").style.display = "block";
         }
     </script>
 </body>
